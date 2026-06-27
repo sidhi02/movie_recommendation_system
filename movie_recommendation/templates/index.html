@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Next Binge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+
+
+        <h1>
+            <span class="small-title">Your Next</span><br>
+            <span class="big-title">BINGE</span>
+        </h1>
+
+        <p class="subtitle">
+            Personalized movie recommendations based on your taste.
+        </p>
+
+        <form method="POST">
+
+            <div class="search-box">
+
+            <input
+                type="text"
+                name="movie"
+                placeholder="Search for a movie..."
+                required>
+
+
+        </div>
+
+        <button
+            type="submit"
+            class="recommend-btn">
+
+                 Get Recommendations
+
+            </button>
+
+        </form>
+
+
+    </div>
+
+
+
+    {% if movies %}
+
+        <h2 class="results-title">
+             Recommendations for <span>{{ search_name|upper }}</span>
+        </h2>
+
+        <div class="movie-list">
+
+            {% for movie in movies %}
+
+        <div class="movie-card">
+
+            {% if movie.poster %}
+
+                <div class="poster-container">
+
+                    <img src="{{ movie.poster }}" alt="{{ movie.title }}">
+
+                    <div class="rating-badge">
+                        ⭐ {{ movie.rating }}
+                    </div>
+
+                </div>
+
+            {% else %}
+
+                <div class="no-poster">
+                    No Poster
+                </div>
+
+            {% endif %}
+
+            <div class="movie-info">
+
+                <h3>{{ movie.title }}</h3>
+
+                <p class="movie-year">
+                    {{ movie.release_date[:4] }}
+                </p>
+
+            </div>
+
+        </div>
+
+            {% endfor %}
+
+        </div>
+
+    {% elif search_name %}
+
+        <h2>No recommendations found 😕</h2>
+
+    {% endif %}
+
+
+
+</div>    
+</body>
+</html>
