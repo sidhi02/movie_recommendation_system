@@ -1,5 +1,6 @@
+<div align="center">
 
-<center> # 🎬 Your Next Binge </center>
+# 🎬 Your Next Binge
 
 <div align="center">
 
