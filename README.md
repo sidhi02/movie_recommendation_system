@@ -68,7 +68,7 @@ To enhance the user experience, the application integrates the **TMDb API** to f
 
 # 🚀 Live Demo
 
-> **Coming Soon...**
+> **[Click here](https://your-next-binge.onrender.com)**
 
 ---
 
