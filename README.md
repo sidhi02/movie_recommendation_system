@@ -1,4 +1,5 @@
-# 🎬 Your Next Binge
+
+<center> # 🎬 Your Next Binge </center>
 
 <div align="center">
 
@@ -13,6 +14,7 @@
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-red?style=for-the-badge)](https://your-next-binge.onrender.com)
 
 </div>
 
