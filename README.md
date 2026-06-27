@@ -51,7 +51,7 @@ To enhance the user experience, the application integrates the **TMDb API** to f
 > Add your homepage screenshot here.
 
 <p align="center">
-<img src="movie_recommendation/static/images/home.png" width="900">
+<img src="/movie_recommendation/static/images/home.png" width="900">
 </p>
 
 ---
@@ -61,7 +61,7 @@ To enhance the user experience, the application integrates the **TMDb API** to f
 > Add your recommendations screenshot here.
 
 <p align="center">
-<img src="movie_recommendation/static/images/recommendation.png" width="900">
+<img src="/movie_recommendation/static/images/recommendations.png" width="900">
 </p>
 
 ---
