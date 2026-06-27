@@ -245,7 +245,7 @@ The recommendation engine is trained on movie metadata containing information su
 
 # 👨‍💻 Author
 
-**Sidhi**
+**Sidhi Deshmukh**
 
 *Aspiring Data Scientist | Machine Learning Enthusiast | Python Developer*
 
